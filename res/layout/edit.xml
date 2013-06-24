@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/edit" 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#352e24"
+        >
+
+     <TextView 
+         android:id="@+id/edit_title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="10pt"
+		 android:layout_centerInParent="true"
+         />
+        
+    </RelativeLayout>
+    
+    
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#FFFFCC"
+	    android:layout_marginBottom="48dp"
+	    android:layout_below="@+id/edit"
+	    >
+	  
+	 <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@+id/edittext"
+            android:singleLine="false"
+            android:textSize="9pt"
+            android:scrollbars="vertical"
+			android:background="#faf3c5" 
+            android:gravity="top"
+            
+            />
+	    	    
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="#352e24"	    
+	    >
+       <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/btneditback"
+			android:src="@drawable/back_btn"
+			android:background="#352e24"
+			android:layout_alignParentLeft="true"
+			
+       /> 
+            
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/btneditsave"
+            android:text="@string/save"
+			android:src="@drawable/save_btn"
+			android:background="#352e24" 
+			android:layout_alignParentRight="true"
+			android:layout_alignTop="@+id/btneditback"       
+       />
+        
+     </RelativeLayout>    
+
+</RelativeLayout>

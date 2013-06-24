@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pcsdev"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission><!-- //Android4.2操作系统需要此权限，其它版本系统无限制。 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/druid_64x64"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pcsdev.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.pcsdev.ContentActivity"
+            android:label="@string/app_name"/>
+        
+        <activity
+            android:name="com.pcsdev.EditActivity"
+            android:label="@string/app_name"/>
+        
+        <activity
+            android:name="com.pcsdev.SlidingMenuTest"
+            android:label="@string/app_name"/>
+        
+    </application>
+
+</manifest>
